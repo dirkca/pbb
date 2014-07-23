@@ -1,4 +1,3 @@
-
 body{
     font-size:15px;
     font-family:'AmbleRegular', Helvetica, Arial, sans-serif;
@@ -6,7 +5,10 @@ body{
     color:#28292d;
     background-color:#103852;
     background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #103852), color-stop(30%, #064063));
-    background-image:-webkit-linear-gradient(#103852,#064063 30%);background-image:-moz-linear-gradient(#103852,#064063 30%);      background-image:-o-linear-gradient(#103852,#064063 30%);background-image:linear-gradient(#103852,#064063 30%)
+    background-image:-webkit-linear-gradient(#103852,#064063 30%);
+    background-image:-moz-linear-gradient(#103852,#064063 30%);      
+    background-image:-o-linear-gradient(#103852,#064063 30%);
+    background-image:linear-gradient(#103852,#064063 30%);
 } 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
     margin: 0;
@@ -33,6 +35,7 @@ em{font-style:italic}
     margin: 0 0 0 3px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 8px;
 }
 .navbar-fixed-top {
     margin-bottom: 0;
@@ -40,6 +43,9 @@ em{font-style:italic}
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0;
 } 
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative;
+}
 #page-header {
     background: url([[pix:theme|header-bkg]]) repeat scroll 0 0 rgba(0, 0, 0, 0);
     margin-top: 0;
@@ -91,22 +97,12 @@ em{font-style:italic}
 /********************** PAGE *******************************/
 #page-content
 {
-    /*background-color: #e1e1e1;*/
-    background-image:url([[pix:theme|maincol-background]]);
-    background-position: 25% 0;
-    background-repeat: repeat-y;  
-    /*background: url([[pix:theme|header-bkg]]) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+
+    background:url([[pix:theme|header-bkg]]);
     color: #28292d;
     font-family: 'AmbleRegular',Helvetica,Arial,sans-serif;
      min-height: 350px;
-}
-#region-main {
-    width: 73%; 
-}
-#region-bs-main-and-pre #region-main {
-    width: 65%;
-    margin-right: 5px;
-}
+} 
 #region-main h2 {
     color: #464646;
     font-family: 'AmbleBold',Helvetica,Arial,sans-serif;
@@ -116,17 +112,6 @@ em{font-style:italic}
     font-size: 1.05em;
     line-height: 1.5em;
 }
-
-#region-main .graph > img {
-    width: 500px;
-}
-.row-fluid .span12 {
-    width: 100% !important;
-    background:url([[pix:theme|header-bkg]]) repeat; 
-    color: #28292d;
-    font-family: 'AmbleRegular',Helvetica,Arial,sans-serif;
-}
-
 table.flexible th, .generaltable th {
     font-size: 13px;
     font-weight: normal;
@@ -137,8 +122,6 @@ table.flexible th, .generaltable th {
     font-weight: normal;
     text-align: left;
 }
-
-
 .form-item .form-label, .mform .fitem div.fitemtitle {
     float: left;
     padding-top: 5px;
@@ -154,9 +137,9 @@ table.flexible th, .generaltable th {
 }
 /********************** SIDEBAR *********************/
 #block-region-side-pre {
-    margin-left: 7px;
+    background-color: #e1e1e1;
+    padding: 0 1%;
 }
-
 .block {
     background-color: #e1e1e1;
     border-bottom: 1px solid #cacaca;
@@ -169,7 +152,6 @@ table.flexible th, .generaltable th {
     font-weight: normal;
     font-family: 'AmbleRegular',Helvetica,Arial,sans-serif;
 }
-
 .block .header h2 {
     color: #606060;
     display: block;
@@ -182,10 +164,6 @@ table.flexible th, .generaltable th {
     text-transform: uppercase;
     word-wrap: break-word;
 }
-.block .header .block_action {
-    float: right;
-    padding: 0 5px;
-}
 .block .content {
     font-size: 0.95em;
     line-height: 1.3em;
@@ -195,6 +173,8 @@ table.flexible th, .generaltable th {
     border-color: #606060;
     margin: 5px 0;
 }
+
+
 
 
 /******** BUTTONS ***********/
@@ -272,7 +252,11 @@ button, input.form-submit, input[type="button"], input[type="submit"], input[typ
     color: #28292d;
     font-weight: normal;
 }
-/************* FOOTER BOX ************/
+/************************************/
+#dock {
+    z-index: 5000;
+}
+/************* FOOTER BOX ***********/
 .sandbox{padding:20px 0;color:#fff}
 .sandbox .container {
     margin: 0 auto;
@@ -330,23 +314,13 @@ button, input.form-submit, input[type="button"], input[type="submit"], input[typ
 /************* RESPONSIVE DESIGN ******************/
 @media only screen and (max-width: 750px)
 {
-   #block-region-side-pre {
-        margin-left: 0px;
-    }
-
-    .block {
-        margin-bottom: 20px;
-        min-height: 20px;
-        padding: 8px 0;
-        background-image:url([[pix:theme|maincol-background]]);
-        background-position: 25% 0;
-        background-repeat: repeat-y;
-    }
-    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {margin-left: 0;margin-right: 0;}
+   #block-region-side-pre {margin-left: 0px;}
+   .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {margin-left: 0;margin-right: 0;}
 }
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 850px)
 {
     .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {margin-left: 0;margin-right: 0;}
+     .block { background: #e1e1e1;} 
 }
 @media only screen and (max-width: 700px)
 {
