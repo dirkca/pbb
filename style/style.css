@@ -135,6 +135,10 @@ table.flexible th, .generaltable th {
     font-size: 13px;
     padding: 4px 0;
 }
+.course-content {
+    background: none repeat scroll 0 0 #ffffff;
+    margin-top: 0;
+}
 /********************** SIDEBAR *********************/
 #block-region-side-pre {
     background-color: #e1e1e1;
