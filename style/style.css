@@ -198,6 +198,15 @@ button, input.form-submit, input[type="button"], input[type="submit"], input[typ
     padding: 16px 50px 11px;
     text-shadow: none;
 	}
+	div.editor_atto_toolbar button {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    line-height: initial;
+    margin: 0;
+    padding: 4px 9px;
+}
 /********** CALENDAR ******************/
 .block .minicalendar th, .block .minicalendar td {
     font-size: 0.7em;
