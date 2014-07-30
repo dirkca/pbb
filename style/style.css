@@ -184,8 +184,20 @@ table.flexible th, .generaltable th {
 /******** BUTTONS ***********/
 
 button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"] {
-    font-size: 12px;
-}
+    background-clip: padding-box;
+    background-color: #49b9b1 !important;
+    background-image: none !important;
+    border: 1px solid #53d1c7 !important;
+    border-radius: 6px;
+    box-shadow: 0 5px 0 #3a938b;
+    color: #fff !important;
+    cursor: pointer;
+    font-family: "prenton","Myriad Pro",Helvetica,Arial,sans-serif !important;
+    font-size: 1.125em !important;
+    font-style: italic;
+    padding: 16px 50px 11px;
+    text-shadow: none;
+	}
 /********** CALENDAR ******************/
 .block .minicalendar th, .block .minicalendar td {
     font-size: 0.7em;
