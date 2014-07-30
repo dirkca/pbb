@@ -102,6 +102,7 @@ em{font-style:italic}
     color: #28292d;
     font-family: 'AmbleRegular',Helvetica,Arial,sans-serif;
      min-height: 350px;
+	 background: #ffffff;
 } 
 #region-main h2 {
     color: #464646;
