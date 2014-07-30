@@ -201,7 +201,7 @@ button, input.form-submit, input[type="button"], input[type="submit"], input[typ
 	}
 	div.editor_atto_toolbar button {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
-    border: 0 none;
+    border: 0 none !important;
     border-radius: 0;
     cursor: pointer;
     line-height: initial;
