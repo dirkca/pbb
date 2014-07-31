@@ -186,11 +186,10 @@ table.flexible th, .generaltable th {
 
 button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"] {
     background-clip: padding-box;
-    background-color: #49b9b1 !important;
+    background-color: #49b9b1;
     background-image: none !important;
     border: 1px solid #53d1c7 !important;
     border-radius: 6px;
-    box-shadow: 0 5px 0 #3a938b;
     color: #fff !important;
     cursor: pointer;
     font-family: "prenton","Myriad Pro",Helvetica,Arial,sans-serif !important;
