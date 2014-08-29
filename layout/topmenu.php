@@ -34,16 +34,23 @@
             
                 <div class="school-brand">
                     <div class="school-logo">
-                            <div class="full-logo">
+                            <div class="full-logo left">
+                                <a href="<?php echo $CFG->wwwroot;?>" title="Palliser Beyond Borders Home Page">
+                                    <img src="<?php echo $OUTPUT->pix_url('logo-palliser', 'theme'); ?>" alt="Palliser Beyond Borders Home Page" />
+                                </a>
+                            </div>
+                        </div>
+            <h1 class="school-name" style="font-size:60px;font-family:open_sans_condensedbold,'droid_serifregular';;">Palliser Beyond Borders</h1>
+               
+                  <div class="school-logo">
+                            <div class="full-logo right">
                                 <a href="<?php echo $CFG->wwwroot;?>" title="Palliser Beyond Borders Home Page">
                                     <img src="<?php echo $OUTPUT->pix_url('logo_pbb', 'theme'); ?>" alt="Palliser Beyond Borders Home Page" />
                                 </a>
                             </div>
                         </div>
-            <h1 class="school-name" style="font-size:60px;font-family:open_sans_condensedbold,'droid_serifregular';;">Palliser Beyond Borders</h1>
-                </div>
-              
-            <div class="school-contact vcard after">
+                   </div> 
+          <!--  <div class="school-contact vcard after">
                         <p class="url fn org">
                             <a href="http://www.palliserbeyondborders.com/">Palliser Beyond Borders</a>
                         </p>
@@ -60,7 +67,7 @@
                         <p class="tel phone">
                                 <span class="type">Phone:</span> 403-328-4111, 1-877-667-1234                            
                         </p>
-            </div>
+            </div> --> 
                     
                                          
                                     
