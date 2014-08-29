@@ -89,17 +89,23 @@
 .secondary-navigation li a{
     background:#676767;
 }
+
+
+
 /***************************************************************/
 .school-brand {
     display: table;
     float: left;
     margin: 0;
     overflow: hidden;
-    width: 75%;
+    /*width: 75%;*/
+    width: 100%;
+    text-align: center;
 }
 .school-logo {
     float: left;
-    height: 160px;
+    /*height: 160px;*/
+    height: 125px;
     position: relative;
     text-align: center;
     width: 160px;
@@ -109,7 +115,8 @@
 }
 .school-logo .full-logo {
     display: table-cell;
-    height: 170px;
+    /*height: 170px;*/
+    height: 125px;
     left: 0;
     overflow: hidden;
     padding-left: 20px;
@@ -123,6 +130,10 @@
     max-width: 100%;
     overflow: hidden;
 }
+.full-logo.left img {
+    height: 120px;
+}
+
 .school-name {
     font-family: open_sans_condensedbold,'droid_serifregular';
     font-size: 49px !important;
