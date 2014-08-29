@@ -183,8 +183,10 @@ table.flexible th, .generaltable th {
 
 
 /******** BUTTONS ***********/
-
 button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"] {
+    font-size: 12px;
+}
+.block-region button,.block-region input.form-submit,.block-region input[type="button"],.block-region input[type="submit"], .block-region input[type="reset"] {
     background-clip: padding-box;
     background-color: #49b9b1;
     background-image: none !important;
@@ -197,8 +199,11 @@ button, input.form-submit, input[type="button"], input[type="submit"], input[typ
     font-style: italic;
     padding: 16px 50px 11px;
     text-shadow: none;
-	}
-	div.editor_atto_toolbar button {
+    }
+.block-region button:hover,.block-region input.form-submit:hover,.block-region input[type="button"]:hover,.block-region input[type="submit"]:hover, .block-region input[type="reset"]:hover {   
+    background-color: #53d1c7;
+}
+div.editor_atto_toolbar button {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
     border: 0 none !important;
     border-radius: 0;
