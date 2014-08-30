@@ -17,7 +17,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 table{border-collapse:collapse;border-spacing:0}
 fieldset,img{border:0}
 address,caption,cite,code,dfn,em,b,strong,th,var{font-style:normal;font-weight:normal}
-ol,ul{list-style:none}
+/*ol,ul{list-style:none}*/
 caption,th{text-align:left}
 h1{font-size:100%}
 h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
@@ -139,6 +139,9 @@ table.flexible th, .generaltable th {
 .course-content {
     background: none repeat scroll 0 0 #ffffff;
     margin-top: 0;
+}
+.no-overflow  ul {
+    padding-left: 25px;
 }
 /********************** SIDEBAR *********************/
 #block-region-side-pre {
