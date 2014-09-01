@@ -215,6 +215,19 @@ div.editor_atto_toolbar button {
     margin: 0;
     padding: 4px 9px;
 }
+.box .singlebutton input {
+    background-color: #005aa8;
+    background-image: linear-gradient(to bottom, #0070a8, #0038a8);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.box .singlebutton input[type="submit"]:hover
+{
+    background-position: 0 center;
+}
 /********** CALENDAR ******************/
 .block .minicalendar th, .block .minicalendar td {
     font-size: 0.7em;
